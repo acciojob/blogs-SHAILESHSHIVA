@@ -37,7 +37,7 @@ public class ImageService {
 
         Image img = imageRepository2.findById(id).get();
 
-        String[] image = img.getDimension().split("X");
+        String[] image = img.getDimensions().split("X");
 
         int len = Integer.valueOf(screen[0])/Integer.valueOf(image[0]);
         int br = Integer.valueOf(screen[1])/Integer.valueOf(image[1]);
